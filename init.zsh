@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-PWD=$(dirname $(readlink -f $0))
+PWD=$(cd "$(dirname "$0")" && pwd -P)
 
 rm -f $HOME/.zshrc && ln -s $PWD/zshrc $HOME/.zshrc
