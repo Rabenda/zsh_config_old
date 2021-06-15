@@ -1,6 +1,10 @@
-MY_ZSH=$HOME/zsh_config
+export MY_ZSH=$HOME/zsh_config
 
-source /etc/profile
+# Gentoo Linux
+if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Gentoo" ]] {
+  source /etc/profile
+}
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -124,3 +128,5 @@ source $ZSH/oh-my-zsh.sh
 if [ -f $HOME/local.zsh ]; then
   source $HOME/local.zsh
 fi
+
+source $MY_ZSH/func.zsh
