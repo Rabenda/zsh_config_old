@@ -5,6 +5,15 @@ if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Gentoo" ]] {
   source /etc/profile
 }
 
+# Deepin_Dev
+if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Deepin" ]] {
+  source $MY_ZSH/debian.zsh
+}
+
+if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Debian" ]] {
+  source $MY_ZSH/debian.zsh
+}
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
