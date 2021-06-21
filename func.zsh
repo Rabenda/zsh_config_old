@@ -8,6 +8,8 @@ function update_zsh_config() {
   exec zsh
 }
 
+alias uzc=update_zsh_config
+
 function unset_proxy() {
   unset http_proxy
   unset https_proxy
@@ -20,4 +22,5 @@ function unset_proxy() {
   unset ALL_PROXY
   echo "Remove http/https/ftp/all proxy"
 }
+
 alias up=unset_proxy

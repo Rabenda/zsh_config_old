@@ -8,6 +8,7 @@ if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Gentoo" ]] {
 # Deepin_Dev
 if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Deepin" ]] {
   source $MY_ZSH/debian.zsh
+  source $MY_ZSH/deepin.zsh
 }
 
 if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Debian" ]] {
