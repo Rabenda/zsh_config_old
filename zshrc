@@ -16,6 +16,10 @@ if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Debian" ]] {
   source $MY_ZSH/distrib/debian.zsh
 }
 
+if [[ $TERM_PROGRAM = 'tmux' ]]; then
+  export TERM="xterm-256color"
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
