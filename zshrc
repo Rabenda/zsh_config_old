@@ -1,4 +1,4 @@
-export MY_ZSH=$HOME/zsh_config
+export MY_ZSH=$HOME/.zsh_config
 
 # Gentoo Linux
 if [[ $(uname -s) == "Linux" && $(lsb_release -si) == "Gentoo" ]] {
@@ -83,7 +83,7 @@ DISABLE_AUTO_UPDATE="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/zsh_config/custom
+ZSH_CUSTOM=$MY_ZSH/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -101,7 +101,7 @@ common_plugins=(
 
 osx_plugins=(
   brew
-  osx
+  macos
 )
 
 plugins=($common_plugins)
